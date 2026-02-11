@@ -1,11 +1,11 @@
-# ADSUM 🎓
+# ADSUM
 > **"L’assistència, simplificada. El compromís, potenciat."**
 
 Projecte Final de Grau Superior (DAW). Aplicació Web Progressiva (PWA) per a la gestió d'assistència escolar mitjançant codis QR dinàmics, geolocalització i intel·ligència artificial.
 
 ---
 
-## 🛠️ Stack Tecnològic
+## Stack Tecnològic
 Aquest projecte utilitza una arquitectura moderna basada en microserveis i components:
 
 * **Frontend:** Vue.js 3 (Vite) + TailwindCSS
@@ -16,7 +16,7 @@ Aquest projecte utilitza una arquitectura moderna basada en microserveis i compo
 
 ---
 
-## 🗄️ Esquema de Base de Dades
+## Esquema de Base de Dades
 L'arquitectura de dades està dissenyada per garantir la integritat de l'assistència i evitar la suplantació d'identitat (Anti-Frau).
 
 ```mermaid
