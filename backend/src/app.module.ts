@@ -3,6 +3,9 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
+import { UsersModule } from './users/users.module';
+import { GroupsModule } from './groups/groups.module';
+import { AttendanceModule } from './attendance/attendance.module';
 
 @Module({
   imports: [
@@ -20,9 +23,12 @@ import { AppService } from './app.service';
         password: configService.get<string>('DB_PASSWORD'),
         database: configService.get<string>('DB_NAME'),
         entities: [__dirname + '/**/*.entity{.ts,.js}'],
-        synchronize: true, // ¡Ojo! Solo para desarrollo, crea las tablas automáticamente
+        synchronize: true,
       }),
     }),
+    UsersModule,
+    GroupsModule,
+    AttendanceModule,
   ],
   controllers: [AppController],
   providers: [AppService],
